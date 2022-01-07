@@ -1,0 +1,111 @@
+.hide-fordes{
+    width: 100%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    @include breack-up(small){
+        display: none;
+    }
+}
+.hide-formob{
+    padding-bottom: 0;
+    margin-bottom: 0;
+    width: 100%;
+    @include breack-dawn(small){
+        display: none;
+    }
+}
+.content{
+    @include breack-up (small){
+        margin: 0 6rem 16.5rem 6rem;
+    }
+    text-align: center;
+    margin: 0 1.5rem 0 1.5rem;
+    & .cont-img{
+        width: 10.438rem;
+    }
+    & h1{
+        font-size: 1.18rem;
+        display: block;
+        margin: 4.563rem 0 1rem 0 ;
+    }
+    & p{
+        font-size: .875rem;
+    }
+    & .container{
+        margin: 0;
+        padding: 0;
+        background-color: $VeryPaleBlue;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include breack-up (small){
+            height: 17.563rem;
+            width: 100%;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            
+            & img{
+                width:24.375rem !important;
+                
+            }
+            & h1 , p {
+                max-width: 23.4rem;
+            }
+        }
+    }
+    
+}
+.container2{
+    @include breack-up (small){
+        height: 17.563rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+        & img{
+            width:24.375rem !important;
+            
+        }
+        & h1 , p {
+            max-width: 23.4rem;
+        }
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 6.625rem 0;
+}
+.sub{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 100px;
+    font-size: 22px;
+    @include breack-up (small){
+        font-size: 27px;
+    }
+}
+.bigBTN2{
+    font-size: 9px;
+    background-color: $Pink;
+    color: white;
+    text-decoration: none;
+    padding: 14px 36px;
+    border-radius: 14px;
+    display: block;
+    margin: 2.688rem 1rem 0 1rem;
+    width: 10.9rem;
+    @include breack-up(small){
+        margin-top: 2.188rem;
+        font-size: 1rem;
+        width: 18.75rem;
+        border-radius: 25px;
+        transition: 0.5s ease-in-out;
+    }
+    &:hover{
+        opacity: 0.5;
+    }
+}

@@ -1,0 +1,13 @@
+$break-boints-up : ("small" : 30em, "large": 64em );
+$breal-pints-dawn : ("small" : 30.99em, "large": 63.99em);
+
+@mixin breack-up($size) {
+    @media (min-width: map-get($break-boints-up, $size)){
+        @content;
+    }
+}
+@mixin breack-dawn($size) {
+    @media (max-width: map-get($breal-pints-dawn, $size)){
+        @content;
+    }
+}

@@ -1,0 +1,138 @@
+.first{
+    padding: 1.563rem 1.313rem;
+    text-align: center;
+    // display: flex;
+    // flex-direction: column;
+    justify-content: space-between;
+    // height: 100vh;
+    @include breack-up (small){
+        padding: 3.625em 2.875em;
+    }
+}
+.hudle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & img{
+        height: 1rem;
+        @include breack-up(small){
+            height:2rem
+        }
+    }
+}
+.marg{
+    margin: 1.5rem;
+    text-align: center;
+    justify-content: space-between;
+}
+.smallBTN{
+    font-size: .563rem;
+    text-decoration: none;
+    color: $Pink;
+    border: 1px solid $Pink;
+    padding: .375rem 1rem;
+    border-radius: 10px;
+    transition: .5s ease-in-out;
+    &:hover{
+        opacity: 0.5;
+    }
+    @include breack-up(small){
+        font-size: 1rem;
+        border-radius: 13px;
+        
+    }
+
+}
+.hudle2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 110px;
+    @include breack-up(small){
+        height: 25rem;
+    }
+    & h1{
+        margin-bottom: 1rem;
+        @include breack-up(small){
+            font-size: 2.5rem;
+            color: $VeryDarkCyan;
+        }
+    }
+    & p{
+        font-size: 14px;
+        @include breack-up(small){
+            font-size:1rem;
+            width: 27rem;
+            color: grey;
+        }
+    }
+    & a{
+        font-size: 9px;
+        background-color: $Pink;
+        color: white;
+        text-decoration: none;
+        padding: 14px 36px;
+        border-radius: 14px;
+        display: block;
+        margin: 2.688rem 1rem 0 1rem;
+        width: 10.9rem;
+        @include breack-up(small){
+            margin-top: 2.188rem;
+            font-size: 1rem;
+            width: 18.75rem;
+            border-radius: 25px;
+            transition: 0.5s ease-in-out;
+        }
+        &:hover{
+            opacity: 0.5;
+        }
+    }
+}
+.img-only{
+    & img{
+    max-width: 100%;
+    margin-top: 5.5rem;
+    
+    @include breack-up(small){
+     height: 33.65rem;       
+    }
+    }
+}
+.stat{
+    margin-top: 6.75rem;    
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+    @include breack-up(small){
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    & .im{
+        margin-bottom: 5.43rem ;
+    }
+    & img{       
+        height: 1.563rem;    
+        @include breack-up(small){
+            height: 2rem;
+        }
+    }
+    & h1{
+        font-size: 2.625rem;
+        text-align: center;
+        @include breack-up(small){
+            font-size: 3.3rem;
+        }
+    }
+    & p{
+        font-size: 11px;
+        text-align: center;
+        color: grey;
+        @include breack-up(small){
+            font-size: .8rem;
+        }
+    }
+}
+

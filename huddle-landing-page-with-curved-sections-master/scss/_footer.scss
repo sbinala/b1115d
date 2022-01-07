@@ -1,0 +1,102 @@
+.foot-main{
+    background:$VeryDarkCyan;
+    color: $VeryPaleBlue;
+    margin-top: 0;
+    @include breack-up(small){
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        padding: 6.5rem 5.5rem 0 5.5rem;
+    }
+}
+.text-boxx{
+    margin: 0 1.5rem 1.813rem 1.5rem;
+    @include breack-up(small){
+        width: 24.063rem;
+        
+    }
+    
+    & h1{
+        font-size: 15px;
+        padding-top: 4.25rem;
+        margin-bottom: 1.375rem;
+    }
+    &  p{
+        font-size: 13px;
+        margin-bottom: 1.375rem;
+    }
+    & .inBTN{
+            & .foot-text{
+            display: block;
+            width: 100%;
+            height: 2.75rem;
+            float: right;
+        }
+        & .footBTN{
+            height: 2.75rem;
+            float: right;
+            width: 8.75rem;
+            font-size: 0.75rem;
+            color: white;
+            background-color: $Pink;
+            display: block;
+            text-align: center;
+            align-items: center;
+            padding: .8rem 32px;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: 0.5s ease-in-out;
+            margin-top: 13px;
+            &:hover{
+            opacity: 0.5;
+        }
+        }
+        
+    }
+}
+.texx{
+    color: $VeryPaleBlue;
+    padding: 11.688rem 1.5rem 0 1.5rem;
+    @include breack-up(small){
+        padding: 4.688rem 0 1.813rem 0;
+        width: 13.813rem ;
+    }
+    & .imgW{
+        filter: brightness(0) invert(1);
+        height: 1.813rem;
+        margin-bottom: 1.188rem;
+        @include breack-up (small){
+            height: 1.875rem;
+        }
+    }
+    & p{
+        font-size: 0.688rem;
+    }
+}
+.contf{
+    margin: 2.875rem 0 0 0;
+    & .cont{
+        display: flex;
+        & img{
+            height: 1rem;
+            margin-right: 1rem;
+            margin-bottom: 1.25rem;
+        }
+    }
+}
+.icons{
+    background-color: $VeryDarkCyan;
+    padding: 2.813rem 1.5rem 1.813rem 2.5rem;
+    @include breack-up(small){
+        margin: 0;
+        padding: 0 5.5rem 2rem 5.5rem;
+    }
+
+    & img {
+    filter: brightness(0) invert(1);
+    height: 1.313rem;
+    margin-right: 1rem;
+    }
+    
+}
